@@ -1,0 +1,60 @@
+ Here are step by step instructions 
+
+Begin by creating a text document named  tutorial.html .
+
+In the document, start by typing  DOCTYPE html  to declare the document type.
+
+Next, create an  html  element and specify the language as English using the appropriate attribute.
+
+Inside the  html  element, create a section called  head .
+
+Within the  head  section 
+  Define the character set as  UTF 8 .
+  Add a  viewport  tag to control the layout on various devices.
+  Create a title for the document, naming it  Documen .
+
+Following the  head  section, start a section labeled  style .
+bodyBackground: https://images.pexels.com/photos/7129708/pexels-photo-7129708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 
+Inside the  style  section 
+  Import a font using an external URL.
+  font: https://fonts.googleapis.com/css?family=Oswald:400
+  Set various styles for the document, such as background image, size, height, font size, font family, and line height.
+
+Next, define a class named  banner .
+
+Within the  banner  class 
+  Specify the positioning as relative.
+  Set the z index to 1.
+  Define margins and width for proper placement and sizing.
+
+Inside the  banner  class, create a sub class named  line .
+
+Within the  line  sub class 
+  Set margins, width, height, box shadow, text alignment, text transformation, font size, line height, and skewing for styling.
+
+After the  line  sub class, incorporate pseudo elements   after  and   before  to design the banner.
+
+Inside these pseudo elements 
+  Position them absolutely for proper placement.
+  Define sizes, border radius, background color, and skew for stylistic purposes.
+
+Create a sub class called  span  within the  banner  class.
+
+Inside the  span  sub class 
+  Define display properties, width, height, border radius, background color, text color, and text shadow for styling.
+
+Moving to the  body  section 
+  Create a  div  element with a class of  banner .
+
+Inside this  div  
+  Create three  div  elements, each with the class  line .
+
+Within these  div  elements 
+  Create three  span  elements, each containing text 
+     Stay Focused 
+     Move Forward 
+     Try Again 
+
+Finally, close the  span ,  div ,  body ,  html , and the document.
+
+These instructions outline the steps to structure an HTML document and apply CSS styles to generate a banner containing three lines of text without utilizing the mentioned symbols.

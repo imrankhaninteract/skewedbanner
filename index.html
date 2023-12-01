@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags defining character set and responsive behavior -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the document -->
+  <title>Banner</title>
+  
+  <!-- Internal CSS styles -->
+  <style>
+    /* Importing a font from Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400);
+    
+    /* Styling for the body */
+    body {
+      /* Background image for the body */
+      background-image: url("https://images.pexels.com/photos/7129708/pexels-photo-7129708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover; /* Ensures the background covers the entire area */
+      height: 80vh; /* 80% of the viewport height */
+      font-size: 1em; /* Base font size */
+      font-family: "Oswald", "Helvetica Neue", Helvetica; /* Font family for the body */
+      line-height: 1.4; /* Line height for text */
+    }
+    
+    /* Styling for the banner section */
+    .banner {
+      position: relative; /* Positioning context for child elements */
+      z-index: 1; /* Stacking order */
+      margin: 80px 40px; /* Margin around the banner */
+      width: 330px; /* Width of the banner */
+    }
+    
+    /* Styling for the lines in the banner */
+    .banner .line {
+      margin: 0 0 10px; /* Margin for each line */
+      width: 100%; /* Width of the line */
+      height: 78px; /* Height of the line */
+      box-shadow: 10px 10px 10px #0000000d; /* Box shadow for the line */
+      text-align: center; /* Center-aligning text */
+      text-transform: uppercase; /* Transforming text to uppercase */
+      font-size: 3em; /* Font size for the text */
+      line-height: 78px; /* Line height for the text */
+      transform: skew(0, -15deg); /* Skewing the text */
+    }
+    
+    /* Pseudo-elements to create angled edges for the lines */
+    .banner .line:after,
+    .banner .line:first-child:before {
+      position: absolute; /* Positioning context for pseudo-elements */
+      top: 44px; /* Position from the top */
+      left: 0; /* Position from the left */
+      z-index: -1; /* Stacking order */
+      display: block; /* Display as block element */
+      width: 330px; /* Width of the pseudo-element */
+      height: 78px; /* Height of the pseudo-element */
+      border-radius: 4px; /* Border radius */
+      background: #b4b4b4cc; /* Background color */
+      content: ""; /* Empty content */
+      transform: skew(0, 15deg); /* Skewing the pseudo-element */
+    }
+    
+    /* Styling for the top pseudo-element */
+    .banner .line:first-child:before {
+      top: -10px; /* Adjusting top position */
+      right: 0; /* Position from the right */
+      left: auto; /* Resetting left position */
+    }
+    
+    /* Styling for triangles on the angled edges */
+    .banner .line:first-child:before,
+    .banner .line:last-child:after {
+      width: 0; /* Width of the triangle */
+      height: 0; /* Height of the triangle */
+      border-width: 38px; /* Border width for the triangle */
+      border-style: solid; /* Border style */
+      border-color: #b4b4b4cc #b4b4b4cc transparent transparent; /* Border colors */
+      background: transparent; /* Transparent background */
+    }
+    
+    /* Styling for the bottom triangle */
+    .banner .line:last-child:after {
+      top: 12px; /* Position from the top */
+      border-color: transparent transparent #b4b4b4cc #b4b4b4cc; /* Border colors */
+    }
+    
+    /* Styling for the text within the banner */
+    .banner span {
+      display: block; /* Display as block element */
+      width: 100%; /* Width of the text */
+      height: 100%; /* Height of the text */
+      border-radius: 4px; /* Border radius */
+      background: #ffffffe6; /* Background color */
+      color: #666; /* Text color */
+      text-shadow: 1px 1px 0 #444; /* Text shadow */
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner section containing multiple lines -->
+  <div class="banner">
+    <div class="line">
+      <span>Stay Focused</span> <!-- Text for the first line -->
+    </div>
+    <div class="line">
+      <span>Move Forward</span> <!-- Text for the second line -->
+    </div>
+    <div class="line">
+      <span>Try Again</span> <!-- Text for the third line -->
+    </div>
+  </div>
+</body>
+</html>
+
+
