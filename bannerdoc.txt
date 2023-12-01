@@ -59,4 +59,3 @@ Within these  div  elements
 
 Finally, close the  span ,  div ,  body ,  html , and the document.
 
-These instructions outline the steps to structure an HTML document and apply CSS styles to generate a banner containing three lines of text without utilizing the mentioned symbols.
